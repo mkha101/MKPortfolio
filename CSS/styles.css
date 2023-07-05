@@ -30,7 +30,7 @@ html {
   z-index: 1;
   text-align: center;
   height: 4rem;
-  background-color: rgb(56, 55, 55);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
@@ -51,7 +51,7 @@ html {
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: #000000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -106,7 +106,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -117,7 +117,7 @@ nav ul li a:hover {
 
 /* WELCOME SCREEN */
 
-#intro {
+.intro {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -145,7 +145,7 @@ nav ul li a:hover {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: em; /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   content: "h1 \a h2";
 }
 
@@ -185,7 +185,7 @@ nav ul li a:hover {
 }
 
 .home_social_links a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .home_social_links a:hover {
@@ -198,6 +198,27 @@ nav ul li a:hover {
 }
 .link img {
   cursor: pointer;
+}
+
+/* About Me */
+.section-about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 45vh;
+  gap: 10px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.about-content span {
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 /* CONTACT ME BUTTON */
@@ -246,7 +267,7 @@ nav ul li a:hover {
 
 /* SECTION STYLING */
 
-#section {
+.section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -259,7 +280,7 @@ h3 {
 }
 
 .section-title {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 40px;
   text-decoration: underline;
   text-decoration-color: red;
@@ -300,7 +321,7 @@ form {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-#section-contact .contact {
+.section-contact .contact {
   margin-top: 20px;
   padding: 60px;
   border-radius: 10px;
@@ -310,7 +331,7 @@ form {
   margin-top: 30px;
 }
 
-#section-contact {
+.section-contact {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -321,16 +342,20 @@ form {
 /* FOOTER */
 
 .footer {
+}
+
+.footerContent {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 4rem;
-  height: 15rem;
-  background-color: rgb(56, 55, 55);
+  justify-content: center;
+  gap: 3rem;
+  height: 10vh;
+  background-color: rgb(200, 200, 200);
 }
 
 .footer_name {
-  padding-top: 2vh;
+  font-size: 1rem;
 }
 
 .copyright {
@@ -338,10 +363,13 @@ form {
 }
 
 .footer_social_links {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
 }
 
 .footer_social_links a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .footer_social_links a:hover {
